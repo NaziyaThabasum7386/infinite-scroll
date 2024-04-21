@@ -1,0 +1,62 @@
+/* General styles for the entire app */
+.weatherApp {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+}
+
+/* City name and date box */
+.cityBox {
+  position: absolute;
+  color: rgb(119, 98, 187);
+  font-size: 5rem; /* 36px */
+  line-height: 5rem; /* 40px */
+  top: 5%;
+  text-align: center;
+}
+
+/* Container for weather info */
+.weatherInfo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-gap: 10px; /* space between boxes */
+  width: 100%;
+  max-width: 600px; /* adjust based on your preference */
+  padding: 20px;
+}
+
+.weatherDetails {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates three columns */
+  grid-gap: 20px; /* Space between each cell */
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for visibility */
+  border-radius: 8px;
+}
+
+.weatherDetail {
+  background: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.blueButton {
+  background-color: blue;
+  color: white;
+}
+
+.backButton {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
